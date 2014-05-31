@@ -1,0 +1,13 @@
+1. Ikke streaming
+   - ReadStringFromServer
+
+2. Streaming litt fra server
+   - ReadStreamFromServer to Console
+   - ReadStreamFromServer and unzip StreamToConsole
+
+3. Streaming til client
+
+   - 
+
+Så alle streamer...
+
