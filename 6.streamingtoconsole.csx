@@ -2,5 +2,5 @@
 using System.Net.Http;
 
 var client = new HttpClient();
-//var request = client.GetStringAsync("http://www.cs.washington.edu/research/xmldatasets/data/SwissProt/SwissProt.xml");
-Console.WriteLine(request.Result);
+var request = client.GetStreamAsync("http://localhost:8090");
+request.Result.CopyTo(Console.OpenStandardOutput());
