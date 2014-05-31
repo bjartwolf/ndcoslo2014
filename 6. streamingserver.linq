@@ -38,7 +38,7 @@ public class FastController : ApiController
    [Route("")]
    public HttpResponseMessage GetResult()
    {
-   	   var fs = new FileStream(@"C:\data\SwissProt.xml", FileMode.Open,FileAccess.Read);
+   	   var fs = new FileStream(@"C:\ndcoslo\SwissProt.xml", FileMode.Open,FileAccess.Read);
        var response = new HttpResponseMessage(HttpStatusCode.OK)
        {
            Content = new StreamContent(fs)

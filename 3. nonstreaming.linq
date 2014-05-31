@@ -15,6 +15,7 @@
   <Namespace>System.Web.Http</Namespace>
 </Query>
 
+// Last blocking thing to show, I promise... 
 async void Main()
 {
 	string baseAddress = "http://localhost:8090/";
@@ -29,7 +30,7 @@ public class FastController : ApiController
    [Route("")]
    public HttpResponseMessage GetResult()
    {
-   	   var file = File.ReadAllText(@"C:\data\SwissProt.xml");
+   	   var file = File.ReadAllText(@"C:\ndcoslo\SwissProt.xml");
        var response = new HttpResponseMessage(HttpStatusCode.OK)
        {
            Content = new StringContent(file)
